@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131-Dynamic Web Fundamentals-Kelsey Woodland</title>
+    <meta name="description" content="WDD 131-Dynamic Web Fundamentals | Kelsey Woodland | Home">
+    <meta name="author" content="Kelsey Woodland">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>WDD 131 | Kelsey Woodland</h1>
+    <header>
+        <div class="header-content">
+            <h1>WDD 131:Dynamic Web Fundamentals-Kelsey Woodland</h1>
+        </div>
+        <nav class="nav">
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/50?lang=eng#:~:text=24%20That%20which,from%20among%20you%3B">Scripture</a>
+            <a href="finalproject.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-about-content">
+                <p>My name is Kelsey Woodland. I live in Woodland Hills, Utah.  I am the wife of an Air Force pilot and the mom to 4 amazing boys. I love spending time with my family skiing, playing basketball, watching movies or cooking great food. </p>
+                <img src="images/profile.webp" alt="Kelsey Woodland" class="profile-image">
+            </div>
+            <div class="card-about-content-reverse">
+                <img src="images/utah.webp" alt="Kelsey Woodland" class="profile-image-reverse">
+                <p>Utah is a beautiful place. I love the mountains and the diverse landscapes. Utah experiences all the seasons in an
+                intense way. The summers are hot with blue skies and lots of hiking, boating, exploring and enjoying the sunshine!
+                Winters are snowy and cold with lots of skiing, sledding, and beautiful snowy vistas. I love Utah!</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="web-dev-resources">
+                <a href="https://www.byupathway.edu">• BYU Pathways</a>
+                <a href="https://github.com/dashboard">• Github Dashboard</a>
+                <a href="https://squoosh.app">• Squoosh</a>
+                <a href="https://fonts.google.com">• Google Fonts</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-content">
+        <p>&copy; <span id="currentYear"></span> 🌲 Kelsey Woodland 🌲 Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
