@@ -1,0 +1,102 @@
+body {
+    font-family: "Big Shoulders", sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Big Shoulders", sans-serif;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#menu {
+    font-size: 1.5em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    background-color: rgb(95, 93, 93);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    margin: 0.5rem 0;
+}
+
+.navigation a:hover {
+    color: rgb(44, 43, 43);
+    background-color: white;
+}
+
+.open a {
+    display: block;
+    padding: 1em;
+}
+
+.main-title {
+    font-family: "Big Shoulders", sans-serif;
+    text-align: center;
+    margin: 1em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+figcaption {
+    font-family: "Big Shoulders", sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+footer {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Big Shoulders", sans-serif;
+    height: 50px;
+    border-radius: 10px;
+}
+
