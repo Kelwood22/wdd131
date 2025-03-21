@@ -17,6 +17,9 @@
         width: 100%;
         max-width: 1000px;
         margin: auto;
+        background-color: var(--background-color);
+        height: auto;
+        overflow: hidden;
     }
     picture, picture img {
         display: block;
@@ -31,6 +34,7 @@
         color: var(--text-color);
         padding: 10px;
         z-index: 2;
+        box-sizing: border-box;
     }
     .weather {
         position: absolute;
@@ -40,5 +44,6 @@
         color: var(--text-color);
         padding: 10px;
         z-index: 2;
+        box-sizing: border-box;
     }
 }
