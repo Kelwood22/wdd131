@@ -1,0 +1,44 @@
+
+
+
+
+@media (min-width: 1000px) {
+    .svg {
+        display: none;
+    }
+    .weather-heading::after {
+        content: "🌦️";
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .hero {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    picture, picture img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 10px;
+        z-index: 2;
+    }
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 10px;
+        z-index: 2;
+    }
+}

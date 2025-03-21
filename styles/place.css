@@ -1,0 +1,85 @@
+:root {
+    --background-color: #dee3e0;
+    --border-color: #000000;
+    --text-color: #000000;
+}
+
+
+@media (max-width: 999px) {
+    .data, .weather {
+        position: static;
+        background-color: var(--background-color);
+        padding: 20px;
+    }
+   
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: var(--border-color) 20px solid;
+}
+
+picture, picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+    border-top: var(--border-color) 10px solid;
+}
+
+.data-table th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.data-table td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+    border-top: var(--border-color) 10px solid;
+}
+
+.weather-table th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.weather-table td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-top: var(--border-color) 20px solid;
+}
+
+
