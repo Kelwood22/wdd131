@@ -1,0 +1,28 @@
+@media only screen and (min-width: 37.5em) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0;
+        margin-left: auto;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        margin: 0;
+        color: white;
+        font-family: "Big Shoulders", sans-serif;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: rgb(44, 43, 43);
+        background-color: white;
+    }
+}
