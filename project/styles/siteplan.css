@@ -1,0 +1,29 @@
+
+:root {
+    --background-color: #FAFAFF;
+    --text-color: #273469;
+    --accent-color: #6040b0;
+}
+
+h1, h2 {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.header-content img {
+    margin-top: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+}
+
