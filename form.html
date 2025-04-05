@@ -24,13 +24,13 @@
         </header>
         <form method="get" action="review.html">
             <fieldset>
-            <legend>Product Name</legend>
+            <label for="product">Product Name</label>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
             </fieldset>
             <fieldset id="rating">
-                <legend>Overall Rating</legend>
+                <label for="rating">Overall Rating</label>
                 <div class="radio-container">
                     <label for="1star">&star;</label>
                     <input type="radio" id="1star" name="rating" value="1" required>
@@ -53,12 +53,11 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Date of Installation</legend>
+                <label for="date">Date of Installation</label>
                 <input type="date" id="date" name="date" required>
             </fieldset>
             <fieldset>
-                <legend>Which features did you find useful in the product?</legend>
-                <p>(Check all that apply)</p>
+                <label for="features">Which features did you find useful in the product? (Check all that apply)</label>
                 <label for="feature1">
                     <input type="checkbox" id="feature1" name="features" value="Feature 1">
                     Durability
@@ -77,11 +76,11 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>Written Review (Optional)</legend>
+                <label for="review">Written Review (Optional)</label>
                 <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
             </fieldset>
             <fieldset>
-                <legend>Your name (Optional)</legend>
+                <label for="username">Your name (Optional)</label>
                 <input type="text" id="username" name="username" placeholder="Enter your name...">
             </fieldset>
             <button type="submit">Submit Review</button> 
