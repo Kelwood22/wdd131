@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="A product review form.">
+    <meta name="author" content="Kelsey Woodland">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <form method="get" action="review.html">
+            <fieldset>
+            <legend>Product Name</legend>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </fieldset>
+            <fieldset id="rating">
+                <legend>Overall Rating</legend>
+                <div class="radio-container">
+                    <label for="1star">&star;</label>
+                    <input type="radio" id="1star" name="rating" value="1" required>
+                </div>
+                <div class="radio-container">
+                    <label for="2stars">&star; &star;</label>
+                    <input type="radio" id="2stars" name="rating" value="2">
+                </div>
+                <div class="radio-container">
+                    <label for="3stars">&star; &star; &star;</label>
+                    <input type="radio" id="3stars" name="rating" value="3">
+                </div>
+                <div class="radio-container">
+                    <label for="4stars">&star; &star; &star; &star;</label>
+                    <input type="radio" id="4stars" name="rating" value="4">
+                </div>
+                <div class="radio-container">
+                    <label for="5stars">&star; &star; &star; &star; &star;</label>
+                    <input type="radio" id="5stars" name="rating" value="5">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <p>(Check all that apply)</p>
+                <label for="feature1">
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                    Durability
+                </label>
+                <label for="feature2">
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                    Ease of Use
+                </label>
+                <label for="feature3">
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                    Performance
+                </label>
+                <label for="feature4">
+                    <input type="checkbox" id="feature4" name="features" value="Feature 4">
+                    Design
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your name (Optional)</legend>
+                <input type="text" id="username" name="username" placeholder="Enter your name...">
+            </fieldset>
+            <button type="submit">Submit Review</button> 
+        </form>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> 🌲 Kelsey Woodland 🌲 Utah</p>
+            <p><span id="lastModified"></span></p>
+        </footer>
+    </div>
+</html>
