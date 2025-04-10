@@ -155,6 +155,8 @@ if (macaronContainer) {
             macaronImage.src = `${macaron.image}`;
             macaronImage.alt = `${macaron.alt}`;
             macaronImage.loading = "lazy";
+            macaronImage.width = 300;
+            macaronImage.height = 300;
             macaronCard.appendChild(macaronImage);
 
             const macaronName = document.createElement("h3");
