@@ -134,9 +134,8 @@ body {
 }
 
 .macaron-card img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
 }
 
