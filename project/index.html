@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Starlight Bakery Home Page</title>
+    <meta name="author" content="Kelsey Woodland">
+    <meta name="description"
+        content="Home page for Sweet Starlight Bakery. This site provides information about Sweet Starlight Bakery.">
+    <link rel="stylesheet" href="styles/bakery.css">
+    <script src="scripts/bakery.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="macaron logo" height="50" width="50">
+        <h1>Sweet Starlight Bakery</h1>
+        <button type="button" id="menu" aria-label="Toggle navigation"></button>
+        <nav class="navigation">
+            <a href="index.html" id="home">Home</a>
+            <a href="flavors.html" id="flavors">Flavors</a>
+            <a href="orders.html" id="order">Orders</a>
+            <a href="contact.html" id="contact">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-row-left">
+                <h2 class="row-heading">Our Story</h2>
+                <img src="images/our-story.webp" alt="Our Story" width="500" loading="lazy">
+                <p>Sweet Starlight Bakery began with a dream to bring the magic of French patisserie to the local community. Inspired by
+                the delicate artistry of macarons and a passion for baking, we set out to craft treats that delight both the eyes and
+                the taste buds. Every macaron is made with love, using premium ingredients and a touch of starlight—capturing moments of
+                joy in every bite. Join us as we share our story, one macaron at a time, under the shimmering stars of Sweet Starlight.</p>
+            </div>
+            <div class="grid-row-right">
+                <h2 class="row-heading">How We Make Our Macarons</h2>
+                <p>At Sweet Starlight Bakery, crafting the perfect macaron is a labor of love and precision. Every step of the process is
+                approached with care, starting with sifting the finest almond flour and whipping meringue to a glossy perfection. The
+                shells are baked to achieve their signature crisp exterior and chewy center. Each macaron is then filled with luscious
+                creams, velvety ganaches, or seasonal jams, all made in-house. It's an art form where passion meets flavor, creating
+                bites of pure enchantment.</p>
+                <img src="images/how-make.webp" alt="Our Macarons" width="500" loading="lazy">
+            </div>
+        </div>
+        <div class="carousel">
+            <h2 class="row-heading">Our Most Popular Macarons</h2>
+            <button class="left-arrow arrow">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/cotton-candy.webp" alt="Cotton Candy Macaron" loading="lazy">
+                <img src="images/lavender.webp" alt="Lavender Macaron" loading="lazy">
+                <img src="images/vanilla-bean.webp" alt="Vanilla Bean Macaron" loading="lazy">
+                <img src="images/pistachio.webp" alt="Pistachio Macaron" loading="lazy">
+                <img src="images/raspberry-lemon.webp" alt="Raspberry Lemon Macaron" loading="lazy">
+            </div>
+            <button class="right-arrow arrow">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Sweet Starlight Bakery</p>
+        <a href="sources.html">Sources</a>
+        <p><span id="lastModified"></span></p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
+            </a>
+            <a href="https://www.x.com" target="_blank" class="social-icon" aria-label="X">
+                <img src="images/x.svg" alt="X" width="24" height="24">
+            </a>
+            <a href="https://www.pinterest.com" target="_blank" class="social-icon" aria-label="Pinterest">
+                <img src="images/pinterest.svg" alt="Pinterest" width="24" height="24">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
